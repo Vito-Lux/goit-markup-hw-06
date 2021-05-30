@@ -808,7 +808,6 @@ button {
 
 .subscribe__label {
   display: inline-flex;
-  padding-top: 10px;
   margin-bottom: 20px;
   font-size: var(--font-standard-size);
   line-height: calc(100% + 2px);
@@ -825,10 +824,11 @@ button {
 }
 
 .subscribe__email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 358px;
   min-height: 50px;
-  padding-top: 15px;
-  padding-bottom: 15px;
   padding-left: 16px;
   margin-right: 12px;
   border-radius: 4px;
@@ -841,12 +841,10 @@ button {
 
 .subscribe__button {
   display: flex;
+  justify-content: center;
   align-items: center;
   min-width: 200px;
   min-height: 50px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
   font-size: 16px;
   line-height: calc(100% + 14px);
   font-weight: 700;
@@ -902,8 +900,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .modal__content {
