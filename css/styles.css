@@ -169,6 +169,7 @@ button {
   display: block;
   height: 4px;
   width: 100%;
+  border-radius: 2px;
   background-color: var(--accent-color);
 }
 
@@ -310,7 +311,7 @@ button {
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  padding: 25px 100px;
+  padding: 25px 0;
   background-color: var(--button-bg-color);
 }
 
@@ -446,8 +447,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 32px;
-  padding-left: 32px;
 }
 
 .our-team-icons__item:not(:last-child) {
@@ -607,14 +606,18 @@ button {
   transition-timing-function: var(--transition-timing-function);
 }
 
-.portfolio-list__item:hover,
-.portfolio-list__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
 .portfolio-list__item:last-child {
   margin-right: 0;
+}
+
+.portfolio-list__link {
+  display: block;
+}
+
+.portfolio-list__link:hover,
+.portfolio-list__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio__overlay {
@@ -645,7 +648,8 @@ button {
   opacity: 0.9;
 }
 
-.portfolio-list__item:hover .portfolio__overlay-text {
+.portfolio-list__link:hover .portfolio__overlay-text,
+.portfolio-list__link:focus .portfolio__overlay-text {
   transform: translateY(0);
 }
 
@@ -742,7 +746,7 @@ button {
 .footer__row {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: baseline;
 }
 
 .footer__right-block {
@@ -750,7 +754,6 @@ button {
 }
 
 .footer-icons__text {
-  padding-top: 10px;
   margin-bottom: 20px;
   font-size: var(--font-standard-size);
   line-height: calc(100% + 2px);
